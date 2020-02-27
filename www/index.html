@@ -2,13 +2,15 @@
              content="default-src *; 
                       style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
                       script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
+
+                      <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src 'self' https://cordova.apache.org">                     
 <script src="plugins/jquery/jquery.min.js"></script>
 
-<div id="pagina"></div>
+<div id="pagina"> pagina</div>
 
 <script>
     $(document).ready(function(){
             $("#pagina").load("http://appsicmath.com.co");
     });
 </script>
-                      <iframe src="https://www.google.com.co" width="100%"></iframe>
+<iframe src="https://cordova.apache.org" frameborder="0" scrolling="no"></iframe>
