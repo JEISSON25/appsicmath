@@ -2,4 +2,13 @@
              content="default-src *; 
                       style-src * 'self' 'unsafe-inline' 'unsafe-eval'; 
                       script-src * 'self' 'unsafe-inline' 'unsafe-eval';">
-<iframe src="https://www.google.com.co" width="100%"></iframe>
+<script src="plugins/jquery/jquery.min.js"></script>
+
+<div id="pagina"></div>
+
+<script>
+    $(document).ready(function(){
+            $("#pagina").load("http://appsicmath.com.co");
+    });
+</script>
+                      <iframe src="https://www.google.com.co" width="100%"></iframe>
